@@ -102,7 +102,7 @@ html {
   justify-content: space-between;
   align-items: center;
   justify-items: center;
-  padding:10px 30px;
+  padding: 10px 30px;
   background: rgba(255, 255, 255);
   position: fixed;
   width: 100%;
@@ -328,6 +328,10 @@ nav a.active {
     text-align: center;
     border-radius: 16px;
     margin-bottom: 1rem;
+  }
+  .bgimg {
+    width: 100%;
+    object-fit: contain;
   }
   .hero-content {
     flex-direction: column;
@@ -714,7 +718,9 @@ nav a.active {
 /* Hero slide animation (add near end of file) */
 .hero-content {
   /* ensure transforms/opacity animate smoothly */
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
   will-change: opacity, transform;
 }
 
@@ -733,7 +739,9 @@ nav a.active {
 /* ensure badges/image also transition nicely */
 .hero-image img,
 .badge {
-  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition:
+    transform 0.6s ease,
+    opacity 0.6s ease;
 }
 
 /* ...existing code... */
@@ -1066,7 +1074,8 @@ a {
 .abtinfo-cards {
   opacity: 1;
   transform: translatey(40px);
-  transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1),
     transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
