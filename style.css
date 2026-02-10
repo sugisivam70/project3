@@ -188,7 +188,7 @@ nav a.active {
   background-position: center;
   margin-bottom: 1.5rem;
   position: relative;
-  min-height: 700px;
+  min-height: 90vh;
   margin-top: 0;
   display: flex;
   flex-direction: column;
@@ -467,6 +467,7 @@ nav a.active {
   background-position: center;
   margin-bottom: 1.5rem;
   position: relative;
+  min-height: 90vh;
 }
 .bgimg {
   position: absolute;
